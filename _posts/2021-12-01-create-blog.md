@@ -53,3 +53,49 @@ You can also update the file titled about.markdown with your own info.
 
 Go ahead and save your changes and then push them to GitHub in order to update your site. 
 
+### Making your first post
+
+post files live in the _posts directory. The format used for naming them is specific and your post will not update it the name does not match. 
+
+All post files should be names with this format: YYYY-MM-DD-title.md
+
+Go ahead and delete the default post ( or you can remame it so that it still available for reference within the directory but won't show up on the site)
+
+Create a new file with the format discussed previously and open it in your preferred text editor. 
+
+Front Matter in Jekyll refers to information about the post where you can set things like the post title, format, date, and category information. 
+
+The front matter for this post looks like this: 
+```
+---
+layout: post
+title:  "Creating a blog with Jekyll and GitHub Pages"
+date:   2021-12-01 09:54:54 -0600
+categories: howto, blog, ruby, git, jekyll, github
+---
+
+```
+
+You can use that as a template to set the information for you own post. 
+
+Jekyll uses [Markdown](https://www.markdownguide.org/) to format posts. 
+
+Go ahead and enter some post content and push it to your repository to deploy it to your blog. 
+
+### Follow up information
+
+This post just touches the surface of a lot of different technologies. Here are some links for further reference if you are interested:
+
+[Jekyll](https://jekyllrb.com/)
+
+[Ruby](https://www.ruby-lang.org/en/)
+
+[WSL](https://docs.microsoft.com/en-us/windows/wsl/about)
+
+[Markdown](https://www.markdownguide.org/)
+
+[GitHub Pages](https://pages.github.com/)
+
+
+
+
