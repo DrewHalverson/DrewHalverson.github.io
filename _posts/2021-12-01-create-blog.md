@@ -31,7 +31,7 @@ After you get Ruby installed, you'll also need Bundler. If it is not installed y
 Finally, we'll install Jekyll. We'll use a Gem called gitHub-pages that includes Jekyll and all of the tools you will need to set up your blog. 
 To install, type `gem install github-pages` in a terminal.
 
-###Setting up your blog
+### Setting up your blog
 
 The first step here is to create the blog structure with Jekyll. Navigate to the directory where you cloned your GitHub repository and enter 
 `jekyll new .`
@@ -39,3 +39,17 @@ The first step here is to create the blog structure with Jekyll. Navigate to the
 Once this is complete, you can enter `jekyll serve` to start a local web server. You'll be provided with an address that you can view the site at in a browser. 
 
 You should also be able to view the blog via github pages. If you enter the repository name as a URL it should get you there, so in my case it would be https://DrewHalverson.github.io
+
+It can take a minute or two for GitHub to catch up so if you don't see your site wait a bit and check back by refreshing your browser window. 
+
+### Initial Configuration
+
+In your blog directory, there is a file called _config.yml. You'll need to edit it to start customizing content for your blog. Go ahead and open it in your favorite text editor. 
+
+You'll want to change the title to what you want your blog to be called, then update your contact info and the blog description. If you don't want to include social media contact info, you can 
+comment those lines out by entering a # at the start of the line. 
+
+You can also update the file titled about.markdown with your own info. 
+
+Go ahead and save your changes and then push them to GitHub in order to update your site. 
+
