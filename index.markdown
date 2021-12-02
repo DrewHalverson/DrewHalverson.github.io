@@ -5,8 +5,6 @@
 layout: home
 ---
 
-My name is Drew Halverson. Welcome to my blog!
+Welcome to my blog! It will mostly cover topics related to web development, with the occasional foray into some of my other interests. 
 
-I am an asipiring web developer, currently enrolled in the Front End Developer program at Madison College in Madison, Wisconsin. 
-
-I hope you find the things I post here as usefull and interesting as I do. 
+I hope you find the things I post here as interesting and useful as I do. 

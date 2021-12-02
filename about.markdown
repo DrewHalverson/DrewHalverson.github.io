@@ -4,9 +4,13 @@ title: About
 permalink: /about/
 ---
 
-My name is Drew Halverson. Welcome to my blog!
+My name is Drew Halverson.
 
-I am an asipiring web developer, currently enrolled in the Front End Developer program at Madison College in Madison, Wisconsin. 
+I am an aspiring web developer, currently enrolled in the Front End Developer program at Madison College in Madison, Wisconsin. 
 
-I hope you find the things I post here as usefull and interesting as I do. 
+I'm also interested in playing music on a variety of instruments, luthiery, woodworking, and ADV motorcycling. 
+
+Mindfullness is also very important to me. I have been practicing meditation for over a decade. 
+
+
 
