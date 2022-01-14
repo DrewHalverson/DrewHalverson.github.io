@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Archiving Git Repos"
-date:   2021-12-02 08:34:54 -0600
+date:   2022-01-14 08:34:54 -0600
 categories: howto, Git
 ---
 
