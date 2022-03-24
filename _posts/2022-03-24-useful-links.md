@@ -41,7 +41,7 @@ are no errors in your CSS code.
 
 [W3C Link Checker](https://validator.w3.org/checklink) checks for broken links in HTML pages. 
 
-## General Coding
+# General Coding
 [Regex Library](https://uibakery.io/regex-library) is a curated list of regular expressions for various languages.
 
 [Regex Cheat Sheet](https://overapi.com/regex) Thanks again, overapi.com. So many good cheat sheets. 
