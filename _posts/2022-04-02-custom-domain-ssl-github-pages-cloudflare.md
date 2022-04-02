@@ -27,17 +27,17 @@ the domain to point to Cloudflare.
 Click on DNS in the left column and click the Add record button. 
 
 Configure a record: <br>
-    * Type should be A 
-    * Name should be your domain name (i.e.- example.com) 
-    * IPv4 address should be the first address found [here under "Configuring an apex domain".](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-records-with-your-dns-provider) 
++ Type should be A 
++ Name should be your domain name (i.e.- example.com) 
++ IPv4 address should be the first address found [here under "Configuring an apex domain".](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-records-with-your-dns-provider) 
 
 
 Repeat this process for each of the four addresses. 
 
 Configure a CNAME record to resolve www for your domain:  <br>
-    * Type should be CNAME 
-    * Name should be www 
-    * Target should be your_github_username.github.io 
+* Type should be CNAME 
+* Name should be www 
+* Target should be your_github_username.github.io 
 
 Once the DNS records are configured, click on SSL/TLS in the sidebar and select the Full 
 radio button to enable Full encryption mode. 
