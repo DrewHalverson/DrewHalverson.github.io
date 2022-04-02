@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Adding a Custom Domain with SSL to GitHub pages"
-date:   2022-04-03 11:15:34 -0600
+date:   2022-04-02 11:15:34 -0600
 categories:
 ---
 
