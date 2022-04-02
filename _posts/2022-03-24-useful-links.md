@@ -2,7 +2,7 @@
 layout: post
 title:  "Useful Links"
 date:   2022-03-24 09:34:54 -0600
-categories: resources, general
+categories:
 ---
 
 I am currently working on a front end developer degree at Madison Area Technical College. 

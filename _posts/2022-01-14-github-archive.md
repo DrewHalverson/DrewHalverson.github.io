@@ -2,7 +2,7 @@
 layout: post
 title:  "Archiving Git Repos"
 date:   2022-01-14 08:34:54 -0600
-categories: howto, Git
+categories:
 ---
 
 In preparation for classes starting in a few days, I wanted to clean up my GitHub repositories and set up some new ones
