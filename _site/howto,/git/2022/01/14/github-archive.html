@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Archiving Git Repos | Bivrost Labs</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="Archiving Git Repos" />
+<meta name="author" content="Drew Halverson" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="In preparation for classes starting in a few days, I wanted to clean up my GitHub repositories and set up some new ones for the classes I will be taking." />
+<meta property="og:description" content="In preparation for classes starting in a few days, I wanted to clean up my GitHub repositories and set up some new ones for the classes I will be taking." />
+<link rel="canonical" href="http://localhost:4000/howto,/git/2022/01/14/github-archive.html" />
+<meta property="og:url" content="http://localhost:4000/howto,/git/2022/01/14/github-archive.html" />
+<meta property="og:site_name" content="Bivrost Labs" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-01-14T08:34:54-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Archiving Git Repos" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"http://localhost:4000/howto,/git/2022/01/14/github-archive.html","headline":"Archiving Git Repos","dateModified":"2022-01-14T08:34:54-06:00","datePublished":"2022-01-14T08:34:54-06:00","author":{"@type":"Person","name":"Drew Halverson"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/howto,/git/2022/01/14/github-archive.html"},"description":"In preparation for classes starting in a few days, I wanted to clean up my GitHub repositories and set up some new ones for the classes I will be taking.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Bivrost Labs" />
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Bivrost Labs</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Archiving Git Repos</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2022-01-14T08:34:54-06:00" itemprop="datePublished">
+        Jan 14, 2022
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>In preparation for classes starting in a few days, I wanted to clean up my GitHub repositories and set up some new ones
+for the classes I will be taking.</p>
+
+<p>Git/GitHub doesn’t appear to have an intuitive way to do this.</p>
+
+<p>The first solution I tried was to move all of the folders for the repos I wanted to archive to a new archive repo. I 
+cloned the new archive repo, moved the folders on my local machine, and pushed the changes to GitHub. This resulted in 
+the directoried appearing in the new repo but the content in the directories being inaccessible.</p>
+
+<p>When I pushed the changes to the new repo, there was a warning about pushing the old repos to the new one and a suggestion
+to use submodules. I probably won’t work with the content I am archiving again, but I may want to view it in the future 
+for reference. At any rate, I felt submodules was not the best solution for this problem.</p>
+
+<p>I removed the .git directories from the repos I was trying to move and then tried the push again. This worked, but was
+a bit tedious as each .git folder needed to be manually removed.</p>
+
+<p>I asked a mentor about the problem and she suggested that I could use git merge -allow-unrelated-histories to achieve
+the same result without the manual file deletion. (Thanks, Beth!)</p>
+
+<p>I am also going to be more intentional about how I set up repos in the future to try to keep things on GitHub as organized 
+as possible. I had multiple repos for different parts of an online program I was working through and I could have just 
+created a single repo for the program and organized with subfolders within that repo.</p>
+
+
+  </div><a class="u-url" href="/howto,/git/2022/01/14/github-archive.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+        <ul class="contact-list">
+          
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p>Web development. One step at a time. </p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/jekyll" title="jekyll"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/jekyllrb" title="jekyllrb"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

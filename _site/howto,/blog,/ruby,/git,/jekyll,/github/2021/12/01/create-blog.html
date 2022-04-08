@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Creating a blog with Jekyll and GitHub Pages | Bivrost Labs</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="Creating a blog with Jekyll and GitHub Pages" />
+<meta name="author" content="Drew Halverson" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Create a GitHub account and a new repository" />
+<meta property="og:description" content="Create a GitHub account and a new repository" />
+<link rel="canonical" href="http://localhost:4000/howto,/blog,/ruby,/git,/jekyll,/github/2021/12/01/create-blog.html" />
+<meta property="og:url" content="http://localhost:4000/howto,/blog,/ruby,/git,/jekyll,/github/2021/12/01/create-blog.html" />
+<meta property="og:site_name" content="Bivrost Labs" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-12-01T09:54:54-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Creating a blog with Jekyll and GitHub Pages" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"http://localhost:4000/howto,/blog,/ruby,/git,/jekyll,/github/2021/12/01/create-blog.html","headline":"Creating a blog with Jekyll and GitHub Pages","dateModified":"2021-12-01T09:54:54-06:00","datePublished":"2021-12-01T09:54:54-06:00","author":{"@type":"Person","name":"Drew Halverson"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/howto,/blog,/ruby,/git,/jekyll,/github/2021/12/01/create-blog.html"},"description":"Create a GitHub account and a new repository","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Bivrost Labs" />
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Bivrost Labs</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Creating a blog with Jekyll and GitHub Pages</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2021-12-01T09:54:54-06:00" itemprop="datePublished">
+        Dec 1, 2021
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h3 id="create-a-github-account-and-a-new-repository">Create a GitHub account and a new repository</h3>
+
+<p>Head to <a href="github.com">github</a> and create a new account or log in to your existing one.</p>
+
+<p>We’ll need to set up a repository for your blog. Click on the repositories tab once you are logged into your account 
+and then click the New button.</p>
+
+<p>In order for this to work with GitHub pages, the naming format for the repository needs to match the following:</p>
+
+<p>username.github.io</p>
+
+<p>So my repository would be named DrewHalverson.github.io</p>
+
+<p>Now you’ll want to clone the repository to your local computer. GitHub has documented that process <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">here</a></p>
+
+<h3 id="install-ruby-bundler-and-jekyll">Install Ruby, Bundler, and Jekyll</h3>
+
+<p>You’ll need to install Ruby on your local system in order to use Jekyll. If you don’t already have it installed, then <a href="https://www.ruby-lang.org/en/documentation/installation/">follow this tutorial</a></p>
+
+<p>Windows users will definitely want to consider using WSL for this (and for most dev stuff, arguably). <a href="https://medium.com/@janelgbrandon/a-guide-for-using-wsl-for-development-d135670313a6">This is a good guide</a> for setting up WSL.</p>
+
+<p>After you get Ruby installed, you’ll also need Bundler. If it is not installed yet run <code class="language-plaintext highlighter-rouge">gem install bundler</code></p>
+
+<p>Finally, we’ll install Jekyll. We’ll use a Gem called gitHub-pages that includes Jekyll and all of the tools you will need to set up your blog. 
+To install, type <code class="language-plaintext highlighter-rouge">gem install github-pages</code> in a terminal.</p>
+
+<h3 id="setting-up-your-blog">Setting up your blog</h3>
+
+<p>The first step here is to create the blog structure with Jekyll. Navigate to the directory where you cloned your GitHub repository and enter 
+<code class="language-plaintext highlighter-rouge">jekyll new .</code></p>
+
+<p>Once this is complete, you can enter <code class="language-plaintext highlighter-rouge">jekyll serve</code> to start a local web server. You’ll be provided with an address that you can view the site at in a browser.</p>
+
+<p>You should also be able to view the blog via github pages. If you enter the repository name as a URL it should get you there, so in my case it would be https://DrewHalverson.github.io</p>
+
+<p>It can take a minute or two for GitHub to catch up so if you don’t see your site wait a bit and check back by refreshing your browser window.</p>
+
+<h3 id="initial-configuration">Initial Configuration</h3>
+
+<p>In your blog directory, there is a file called _config.yml. You’ll need to edit it to start customizing content for your blog. Go ahead and open it in your favorite text editor.</p>
+
+<p>You’ll want to change the title to what you want your blog to be called, then update your contact info and the blog description. If you don’t want to include social media contact info, you can 
+comment those lines out by entering a # at the start of the line.</p>
+
+<p>You can also update the file titled about.markdown with your own info.</p>
+
+<p>Go ahead and save your changes and then push them to GitHub in order to update your site.</p>
+
+<h3 id="making-your-first-post">Making your first post</h3>
+
+<p>post files live in the _posts directory. The format used for naming them is specific and your post will not update it the name does not match.</p>
+
+<p>All post files should be names with this format: YYYY-MM-DD-title.md</p>
+
+<p>Go ahead and delete the default post ( or you can remame it so that it still available for reference within the directory but won’t show up on the site)</p>
+
+<p>Create a new file with the format discussed previously and open it in your preferred text editor.</p>
+
+<p>Front Matter in Jekyll refers to information about the post where you can set things like the post title, format, date, and category information.</p>
+
+<p>The front matter for this post looks like this:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: post
+title:  "Creating a blog with Jekyll and GitHub Pages"
+date:   2021-12-01 09:54:54 -0600
+categories: howto, blog, ruby, git, jekyll, github
+---
+
+</code></pre></div></div>
+
+<p>You can use that as a template to set the information for you own post.</p>
+
+<p>Jekyll uses <a href="https://www.markdownguide.org/">Markdown</a> to format posts.</p>
+
+<p>Go ahead and enter some post content and push it to your repository to deploy it to your blog.</p>
+
+<h3 id="follow-up-information">Follow up information</h3>
+
+<p>This post just touches the surface of a lot of different technologies. Here are some links for further reference if you are interested:</p>
+
+<p><a href="https://jekyllrb.com/">Jekyll</a></p>
+
+<p><a href="https://www.ruby-lang.org/en/">Ruby</a></p>
+
+<p><a href="https://docs.microsoft.com/en-us/windows/wsl/about">WSL</a></p>
+
+<p><a href="https://www.markdownguide.org/">Markdown</a></p>
+
+<p><a href="https://pages.github.com/">GitHub Pages</a></p>
+
+
+  </div><a class="u-url" href="/howto,/blog,/ruby,/git,/jekyll,/github/2021/12/01/create-blog.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+        <ul class="contact-list">
+          
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p>Web development. One step at a time. </p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/jekyll" title="jekyll"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/jekyllrb" title="jekyllrb"><svg class="svg-icon grey"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

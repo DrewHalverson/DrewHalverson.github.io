@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-21T13:40:32-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Bivrost Labs</title><subtitle>Web development. One step at a time. </subtitle><author><name>Drew Halverson</name></author><entry><title type="html">Archiving Git Repos</title><link href="http://localhost:4000/howto,/git/2022/01/14/github-archive.html" rel="alternate" type="text/html" title="Archiving Git Repos" /><published>2022-01-14T08:34:54-06:00</published><updated>2022-01-14T08:34:54-06:00</updated><id>http://localhost:4000/howto,/git/2022/01/14/github-archive</id><content type="html" xml:base="http://localhost:4000/howto,/git/2022/01/14/github-archive.html">&lt;p&gt;In preparation for classes starting in a few days, I wanted to clean up my GitHub repositories and set up some new ones
+for the classes I will be taking.&lt;/p&gt;
+
+&lt;p&gt;Git/GitHub doesn’t appear to have an intuitive way to do this.&lt;/p&gt;
+
+&lt;p&gt;The first solution I tried was to move all of the folders for the repos I wanted to archive to a new archive repo. I 
+cloned the new archive repo, moved the folders on my local machine, and pushed the changes to GitHub. This resulted in 
+the directoried appearing in the new repo but the content in the directories being inaccessible.&lt;/p&gt;
+
+&lt;p&gt;When I pushed the changes to the new repo, there was a warning about pushing the old repos to the new one and a suggestion
+to use submodules. I probably won’t work with the content I am archiving again, but I may want to view it in the future 
+for reference. At any rate, I felt submodules was not the best solution for this problem.&lt;/p&gt;
+
+&lt;p&gt;I removed the .git directories from the repos I was trying to move and then tried the push again. This worked, but was
+a bit tedious as each .git folder needed to be manually removed.&lt;/p&gt;
+
+&lt;p&gt;I asked a mentor about the problem and she suggested that I could use git merge -allow-unrelated-histories to achieve
+the same result without the manual file deletion. (Thanks, Beth!)&lt;/p&gt;
+
+&lt;p&gt;I am also going to be more intentional about how I set up repos in the future to try to keep things on GitHub as organized 
+as possible. I had multiple repos for different parts of an online program I was working through and I could have just 
+created a single repo for the program and organized with subfolders within that repo.&lt;/p&gt;</content><author><name>Drew Halverson</name></author><category term="howto," /><category term="Git" /><summary type="html">In preparation for classes starting in a few days, I wanted to clean up my GitHub repositories and set up some new ones for the classes I will be taking.</summary></entry><entry><title type="html">Fun with Flexbox</title><link href="http://localhost:4000/howto,/flexbox,/tutorials/2021/12/02/flexbox.html" rel="alternate" type="text/html" title="Fun with Flexbox" /><published>2021-12-02T08:34:54-06:00</published><updated>2021-12-02T08:34:54-06:00</updated><id>http://localhost:4000/howto,/flexbox,/tutorials/2021/12/02/flexbox</id><content type="html" xml:base="http://localhost:4000/howto,/flexbox,/tutorials/2021/12/02/flexbox.html">&lt;p&gt;I’ve been working on deepening my understanding of Flexbox and I wanted to aggregate all of the resources I’ve found useful in one location.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-odin-project---foundations&quot;&gt;The Odin Project - Foundations&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.theodinproject.com/&quot;&gt;The Odin Project&lt;/a&gt; is a well put together and extremely useful curriculum for front end web development.&lt;/p&gt;
+
+&lt;p&gt;The initial curriculum goes over web development fundamentals and has an &lt;a href=&quot;https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/introduction-to-flexbox&quot;&gt;entire section on Flexbox&lt;/a&gt;  with tons of good info.&lt;/p&gt;
+
+&lt;h3 id=&quot;css-tricks&quot;&gt;CSS-Tricks&lt;/h3&gt;
+
+&lt;p&gt;Css-Tricks has a &lt;a href=&quot;https://css-tricks.com/snippets/css/a-guide-to-flexbox/&quot;&gt;comprehensive guide&lt;/a&gt; to Flexbox that is easy to understand. It is a great reference for when you forget how a particular component works.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-the-flexbox&quot;&gt;What the Flexbox&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://wesbos.com/&quot;&gt;Wes Bos&lt;/a&gt; has a lot of great content and that includes his &lt;a href=&quot;https://flexbox.io&quot;&gt;video tutorial series on Flexbox&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;His instruction is clear and comprehensive and there is plenty of opportunity to code along with him as he walks through all of the details.&lt;/p&gt;
+
+&lt;h3 id=&quot;flexbox-zombies&quot;&gt;Flexbox Zombies&lt;/h3&gt;
+
+&lt;p&gt;Dave Geddes has created a &lt;a href=&quot;https://geddski.teachable.com/p/flexbox-zombies&quot;&gt;fun, game-based tutorial for Flexbox&lt;/a&gt; that provides another perspective of all the ins and outs of using Flexbox.
+You will have to create an account for this one, but the content is worth the effort.&lt;/p&gt;
+
+&lt;h3 id=&quot;other-resources&quot;&gt;Other Resources&lt;/h3&gt;
+
+&lt;p&gt;The Mozilla MDN site has a great &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox&quot;&gt;Flexbox reference&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container&quot;&gt;And more specific info on aligning items.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.freecodecamp.org/news/css-flexbox-tutorial-with-cheatsheet/&quot;&gt;FreeCodeCamp also has a great tutorial.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, &lt;a href=&quot;https://flexboxfroggy.com/&quot;&gt;Flexbox Froggy&lt;/a&gt; is another fun game to practice your Flexbox skills with.&lt;/p&gt;</content><author><name>Drew Halverson</name></author><category term="howto," /><category term="Flexbox," /><category term="tutorials" /><summary type="html">I’ve been working on deepening my understanding of Flexbox and I wanted to aggregate all of the resources I’ve found useful in one location.</summary></entry><entry><title type="html">Creating a blog with Jekyll and GitHub Pages</title><link href="http://localhost:4000/howto,/blog,/ruby,/git,/jekyll,/github/2021/12/01/create-blog.html" rel="alternate" type="text/html" title="Creating a blog with Jekyll and GitHub Pages" /><published>2021-12-01T09:54:54-06:00</published><updated>2021-12-01T09:54:54-06:00</updated><id>http://localhost:4000/howto,/blog,/ruby,/git,/jekyll,/github/2021/12/01/create-blog</id><content type="html" xml:base="http://localhost:4000/howto,/blog,/ruby,/git,/jekyll,/github/2021/12/01/create-blog.html">&lt;h3 id=&quot;create-a-github-account-and-a-new-repository&quot;&gt;Create a GitHub account and a new repository&lt;/h3&gt;
+
+&lt;p&gt;Head to &lt;a href=&quot;github.com&quot;&gt;github&lt;/a&gt; and create a new account or log in to your existing one.&lt;/p&gt;
+
+&lt;p&gt;We’ll need to set up a repository for your blog. Click on the repositories tab once you are logged into your account 
+and then click the New button.&lt;/p&gt;
+
+&lt;p&gt;In order for this to work with GitHub pages, the naming format for the repository needs to match the following:&lt;/p&gt;
+
+&lt;p&gt;username.github.io&lt;/p&gt;
+
+&lt;p&gt;So my repository would be named DrewHalverson.github.io&lt;/p&gt;
+
+&lt;p&gt;Now you’ll want to clone the repository to your local computer. GitHub has documented that process &lt;a href=&quot;https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;install-ruby-bundler-and-jekyll&quot;&gt;Install Ruby, Bundler, and Jekyll&lt;/h3&gt;
+
+&lt;p&gt;You’ll need to install Ruby on your local system in order to use Jekyll. If you don’t already have it installed, then &lt;a href=&quot;https://www.ruby-lang.org/en/documentation/installation/&quot;&gt;follow this tutorial&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Windows users will definitely want to consider using WSL for this (and for most dev stuff, arguably). &lt;a href=&quot;https://medium.com/@janelgbrandon/a-guide-for-using-wsl-for-development-d135670313a6&quot;&gt;This is a good guide&lt;/a&gt; for setting up WSL.&lt;/p&gt;
+
+&lt;p&gt;After you get Ruby installed, you’ll also need Bundler. If it is not installed yet run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem install bundler&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, we’ll install Jekyll. We’ll use a Gem called gitHub-pages that includes Jekyll and all of the tools you will need to set up your blog. 
+To install, type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem install github-pages&lt;/code&gt; in a terminal.&lt;/p&gt;
+
+&lt;h3 id=&quot;setting-up-your-blog&quot;&gt;Setting up your blog&lt;/h3&gt;
+
+&lt;p&gt;The first step here is to create the blog structure with Jekyll. Navigate to the directory where you cloned your GitHub repository and enter 
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll new .&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Once this is complete, you can enter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt; to start a local web server. You’ll be provided with an address that you can view the site at in a browser.&lt;/p&gt;
+
+&lt;p&gt;You should also be able to view the blog via github pages. If you enter the repository name as a URL it should get you there, so in my case it would be https://DrewHalverson.github.io&lt;/p&gt;
+
+&lt;p&gt;It can take a minute or two for GitHub to catch up so if you don’t see your site wait a bit and check back by refreshing your browser window.&lt;/p&gt;
+
+&lt;h3 id=&quot;initial-configuration&quot;&gt;Initial Configuration&lt;/h3&gt;
+
+&lt;p&gt;In your blog directory, there is a file called _config.yml. You’ll need to edit it to start customizing content for your blog. Go ahead and open it in your favorite text editor.&lt;/p&gt;
+
+&lt;p&gt;You’ll want to change the title to what you want your blog to be called, then update your contact info and the blog description. If you don’t want to include social media contact info, you can 
+comment those lines out by entering a # at the start of the line.&lt;/p&gt;
+
+&lt;p&gt;You can also update the file titled about.markdown with your own info.&lt;/p&gt;
+
+&lt;p&gt;Go ahead and save your changes and then push them to GitHub in order to update your site.&lt;/p&gt;
+
+&lt;h3 id=&quot;making-your-first-post&quot;&gt;Making your first post&lt;/h3&gt;
+
+&lt;p&gt;post files live in the _posts directory. The format used for naming them is specific and your post will not update it the name does not match.&lt;/p&gt;
+
+&lt;p&gt;All post files should be names with this format: YYYY-MM-DD-title.md&lt;/p&gt;
+
+&lt;p&gt;Go ahead and delete the default post ( or you can remame it so that it still available for reference within the directory but won’t show up on the site)&lt;/p&gt;
+
+&lt;p&gt;Create a new file with the format discussed previously and open it in your preferred text editor.&lt;/p&gt;
+
+&lt;p&gt;Front Matter in Jekyll refers to information about the post where you can set things like the post title, format, date, and category information.&lt;/p&gt;
+
+&lt;p&gt;The front matter for this post looks like this:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+layout: post
+title:  &quot;Creating a blog with Jekyll and GitHub Pages&quot;
+date:   2021-12-01 09:54:54 -0600
+categories: howto, blog, ruby, git, jekyll, github
+---
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can use that as a template to set the information for you own post.&lt;/p&gt;
+
+&lt;p&gt;Jekyll uses &lt;a href=&quot;https://www.markdownguide.org/&quot;&gt;Markdown&lt;/a&gt; to format posts.&lt;/p&gt;
+
+&lt;p&gt;Go ahead and enter some post content and push it to your repository to deploy it to your blog.&lt;/p&gt;
+
+&lt;h3 id=&quot;follow-up-information&quot;&gt;Follow up information&lt;/h3&gt;
+
+&lt;p&gt;This post just touches the surface of a lot of different technologies. Here are some links for further reference if you are interested:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.ruby-lang.org/en/&quot;&gt;Ruby&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/windows/wsl/about&quot;&gt;WSL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.markdownguide.org/&quot;&gt;Markdown&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;&lt;/p&gt;</content><author><name>Drew Halverson</name></author><category term="howto," /><category term="blog," /><category term="ruby," /><category term="git," /><category term="jekyll," /><category term="github" /><summary type="html">Create a GitHub account and a new repository</summary></entry></feed>
